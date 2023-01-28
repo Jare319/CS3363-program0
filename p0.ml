@@ -6,9 +6,10 @@
 *Jarrett Crump, insert csx user ID*
 *Insert instuctions*
 
-val l:int list = [1,2,3]
-val x:int = 2
+val L:real list = [1,2,3]
+val x:real = 2
 
-fun epoly(l:int list, x:int):int =
-    hd(l) + (x * epoly(tl(l)))
+fun epoly(L:real list as h::T, x:real) = 0.0
+|   epoly(L:real list as h::T, x:real) = h + (epoly(T) * x)    
+
 print(Int.toString (epoly));
